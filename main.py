@@ -157,7 +157,7 @@ def main():
     parser.add_argument(
         "resume",
         nargs='?',
-        default="Artin_Majd_CV.pdf",
+        default="ArtinMajd_CV.pdf",
         help="Resume text or path to file containing resume (default: Artin_Majd_CV.pdf)"
     )
     parser.add_argument(
