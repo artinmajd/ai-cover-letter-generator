@@ -60,6 +60,7 @@ OPENAI_API_KEY=your_actual_api_key_here
 CONTACT_EMAIL=your.email@example.com
 CONTACT_PHONE=+1 (XXX) XXX-XXXX  
 CONTACT_LINKEDIN=linkedin.com/in/your-profile
+CONTACT_WEBSITE=www.yourwebsite.com
 ```
 
 ## Usage
@@ -187,7 +188,7 @@ python main.py --model gpt-4
 ### Common Issues
 
 1. **API Key Error**: Ensure your `.env` file contains the correct `OPENAI_API_KEY`
-2. **Contact Information**: Make sure to update the contact information in your `.env` file (CONTACT_EMAIL, CONTACT_PHONE, CONTACT_LINKEDIN)
+2. **Contact Information**: Make sure to update the contact information in your `.env` file (CONTACT_EMAIL, CONTACT_PHONE, CONTACT_LINKEDIN, CONTACT_WEBSITE)
 3. **Rate Limits**: If you hit OpenAI rate limits, wait a moment and try again
 4. **File Encoding**: Ensure your resume and job description files use UTF-8 encoding
 5. **PDF Reading**: Ensure PyPDF2 is installed for PDF resume support

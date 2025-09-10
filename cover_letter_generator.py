@@ -54,7 +54,8 @@ class CoverLetterGenerator:
         env_contact = {
             'email': os.getenv('CONTACT_EMAIL', 'your.email@example.com'),
             'phone': os.getenv('CONTACT_PHONE', '+1 (XXX) XXX-XXXX'),
-            'linkedin': os.getenv('CONTACT_LINKEDIN', 'linkedin.com/in/your-profile')
+            'linkedin': os.getenv('CONTACT_LINKEDIN', 'linkedin.com/in/your-profile'),
+            'website': os.getenv('CONTACT_WEBSITE', 'www.yourwebsite.com')
         }
         
         return env_contact
@@ -170,10 +171,11 @@ class CoverLetterGenerator:
         """
         prompt = f"""Write a great cover letter for this job description. Use what you already know from my resume to highlight my most relevant experiences and skills. Make sure the tone is very humanized, natural, and conversational rather than sounding like a typical AI-generated text. Avoid em dashes and odd punctuation. Keep it professional but approachable, with a strong narrative that shows why I'm a good fit. Do not use any placeholders or bracketed fields of any kind (no [], <>, {{}}, ALL CAPS prompts like INSERT/ADD HERE, or 'to be filled later'). Provide fully realized, final content with no TODOs or TBDs.
 
-End the letter with the following three separate lines:
+End the letter with the following four separate lines:
 Email: {self.contact_info['email']}
 Phone: {self.contact_info['phone']}
 LinkedIn: {self.contact_info['linkedin']}
+Website: {self.contact_info['website']}
 
 RESUME:
 {resume}
